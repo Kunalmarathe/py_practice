@@ -1,8 +1,15 @@
-# List datatype
+# Tuple datatype
 
 # Heterogeneous
 # Ordered
 # Indexed
-# Mutable
+# Immutable
 # Allows Duplicate
+
+Arr = (11, 18.90, True, "Marvellous", 11)
+
+print(type(Arr))
+print(len(Arr))
+print(Arr[0])
+print(Arr[2])
 
