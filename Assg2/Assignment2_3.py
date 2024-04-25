@@ -12,12 +12,11 @@ def main():
     No = int(input())
 
     if(No <= 0):
-        print("Please enter a positive number greater than 0")
-        exit()
-    
-    Result = factorial(No)
-
-    print("The factorial of ",No," is : ",Result)
+        print("Please enter a number greater than 0")
+        main()
+    else:
+        Result = factorial(No)
+        print("The factorial of ",No," is : ",Result)
 
 if __name__ == "__main__":
     main()
