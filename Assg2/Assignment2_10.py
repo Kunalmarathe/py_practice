@@ -15,10 +15,14 @@ def addOfNum(No):
 
 def main():
     print("Enter a number : ")
-    Result = addOfNum(int(input()))
+    iNo = int(input())
 
-    print("The addition of number is : ",Result)
-
+    if(iNo < 0):
+        print("Please enter a number greater than 0")
+        main()
+    else:
+        Result = addOfNum(iNo)
+        print("The addition of number is : ",Result)
 
 if __name__ == "__main__":
     main()
