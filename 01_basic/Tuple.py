@@ -12,4 +12,3 @@ print(type(Arr))
 print(len(Arr))
 print(Arr[0])
 print(Arr[2])
-
