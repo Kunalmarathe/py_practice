@@ -3,7 +3,7 @@ def CheckEven(A):
     return (A%2 == 0)
 
 CheckEvenX = lambda A : (A%2 == 0)
-
+# design pattern : it is pattern 
 # here CheckEvenX is object of python. It is pure oop language. Also it have class for every function.
 # General purpose language
 
