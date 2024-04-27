@@ -1,11 +1,14 @@
-
+# return is block specific word and there is no block in lambda so no return word
 def CheckEven(A):
     return (A%2 == 0)
 
 CheckEvenX = lambda A : (A%2 == 0)
 
+# here CheckEvenX is object of python. It is pure oop language. Also it have class for every function.
+# General purpose language
+
 def main():
-    Ret = CheckEvenX(10)
+    Ret = CheckEvenX(11)
     if(Ret == True):
         print("Its even number")
     else:
