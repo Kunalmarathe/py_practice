@@ -1,3 +1,5 @@
+# sequencialy execution of the program
+
 print("Demonstration of Sequence")
 
 No1 = 0
