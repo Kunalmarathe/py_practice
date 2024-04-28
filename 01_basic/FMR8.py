@@ -36,7 +36,18 @@ def reduceX(Task, Elements):
     return Sum
 
 def main():
-    Data = [11, 14, 20, 23, 18, 16, 15, 20]
+    Data = []
+
+    print("Enter no of elements : ")
+    size = int(input())
+
+    print("Enter the elements : ")
+    iCnt = 0
+
+    for iCnt in range(0, size):
+        No = int(input())
+        Data.append(No)
+    
     print("Data from input list : ",Data)
 
     FData = list(filterX(CheckEven, Data))
