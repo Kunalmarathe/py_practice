@@ -14,7 +14,7 @@ def main():
 
     for i in range(length):
         Numbers.append(int(input()))
-        i += 1
+        
 
     Result = addition(Numbers)
 

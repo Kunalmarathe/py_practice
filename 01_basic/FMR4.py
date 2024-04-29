@@ -1,9 +1,7 @@
 from functools import reduce
 
-CheckEven = lambda No : No%2 == 0
-
+CheckEven = lambda No : (No % 2 == 0)
 Increase = lambda No : No + 1
-
 Add = lambda A,B: A + B
 
 def main():
@@ -14,13 +12,10 @@ def main():
     size = int(input())
 
     print("Enter the elements : ")
-    iCnt = 0
-    
-    # while(length > 0):
-    #     Data[0] = int(input())
-    #     length -= 1
+    # as per sir iCnt = 0
+    # iCnt at place i
 
-    for iCnt in range(0, size):
+    for i in range(0, size):
         No = int(input())
         Data.append(No)
     

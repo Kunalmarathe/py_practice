@@ -1,7 +1,7 @@
 
 CheckEven = lambda No : No%2 == 0
 Increase = lambda No : No + 1
-Add = lambda A,B: A + B
+Add = lambda A, B: A + B
 
 # self written fucntion filterX, mapX, reduceX
 
@@ -27,28 +27,25 @@ def reduceX(Task, Elements):
     Sum = 0
 
     for no in Elements:
-        Sum = Task(sum, no)
+        Sum = Task(Sum, no)
         
     return Sum
 
 def main():
     
-    Data = [11, 14, 20, 23, 18, 16, 15, 20]
+    Data = []
+
+    print("Enter no of elements : ")
+    size = int(input())
+
+    print("Enter the elements : ")
+    iCnt = 0
+
+    for iCnt in range(0, size):
+        No = int(input())
+        Data.append(No)
+    
     print("Data from input list : ",Data)
-    
-    # Data = []
-
-    # print("Enter no of elements : ")
-    # size = int(input())
-
-    # print("Enter the elements : ")
-    # iCnt = 0
-
-    # for iCnt in range(0, size):
-    #     No = int(input())
-    #     Data.append(No)
-    
-    # print("Data from input list : ",Data)
 
     FData = list(filterX(CheckEven, Data))
     print("Data after filter activity : ",FData)
