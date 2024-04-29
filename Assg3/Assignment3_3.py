@@ -9,13 +9,13 @@ def Minimum(Num):
     return result
 
 def main():
-    print("Enter how many numbers you want to add : ")
-    length = int(input())
+    print("Number of elements : ")
+    size = int(input())
 
-    print("Enter the numbers : ")
+    print("Input Elements : ")
     Numbers = []
 
-    for i in range(length):
+    for i in range(size):
         Numbers.append(int(input()))
         
     Result = Minimum(Numbers)

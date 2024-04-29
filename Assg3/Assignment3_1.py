@@ -1,3 +1,4 @@
+
 def addition(Num):
     sum = 0
     
@@ -7,12 +8,12 @@ def addition(Num):
     return sum
 
 def main():
-    print("Enter how many numbers you want to add : ")
-    length = int(input())
+    print("Number of elements : ")
+    size = int(input())
 
     Numbers = []
 
-    for i in range(length):
+    for i in range(size):
         Numbers.append(int(input()))
         
 
