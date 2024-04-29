@@ -1,9 +1,9 @@
 
 def Minimum(Num):
-    result = 0
+    result = Num[0]
 
     for i in Num:
-        if(result > i):
+        if(i < result):
             result = i
 
     return result
@@ -12,12 +12,12 @@ def main():
     print("Enter how many numbers you want to add : ")
     length = int(input())
 
+    print("Enter the numbers : ")
     Numbers = []
 
     for i in range(length):
         Numbers.append(int(input()))
-        length += 1
-
+        
     Result = Minimum(Numbers)
 
     print("The minimum is : ",Result)

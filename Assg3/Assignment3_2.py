@@ -11,12 +11,12 @@ def Maximum(Num):
 def main():
     print("Enter how many numbers you want to add : ")
     length = int(input())
-
+    
+    print("Enter the numbers : ")
     Numbers = []
 
     for i in range(length):
         Numbers.append(int(input()))
-        length -= 1
 
     Result = Maximum(Numbers)
 
