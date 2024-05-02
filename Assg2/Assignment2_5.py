@@ -2,8 +2,7 @@
 def isPrime(No):
     if(No <= 1):
         return False
-        exit()
-    
+
     for i in range(2, No):
         if(No % i == 0):
             return False
