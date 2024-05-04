@@ -1,4 +1,8 @@
 # if we not give start then process will not start
+# here , is place holder for remaining parameteres
+# what is orphened process
+# here if we give the () for the EvenDisplay/ OddDisplay then it will considerd as calling of 
+# that function
 import multiprocessing
 
 def EvenDisplay(No):
@@ -20,8 +24,8 @@ def main():
     Value = int(input())
 
 
-    p1 = multiprocessing.Process(target= EvenDisplay, args= Value)
-    p2 = multiprocessing.Process(target= OddDisplay, args= Value)
+    p1 = multiprocessing.Process(target= EvenDisplay, args= (Value,))
+    p2 = multiprocessing.Process(target= OddDisplay, args= (Value,))
 
     p1.start()
     p2.start()

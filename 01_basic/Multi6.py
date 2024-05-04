@@ -26,9 +26,9 @@ def main():
     Value = int(input())
 
 
-    p1 = threading.Thread(target= EvenDisplay, args= Value)
-    p2 = threading.Thread(target= OddDisplay, args= Value)
-
+    p1 = multiprocessing.Process(target= EvenDisplay, args= Value)
+    p2 = multiprocessing.Process(target= OddDisplay, args= Value)
+    
     p1.start()
     p2.start()
 
