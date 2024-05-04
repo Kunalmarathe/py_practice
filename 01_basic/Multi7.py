@@ -1,11 +1,12 @@
 # if we not give start then process will not start
-# doubt in program
+# first run withour tid then run with it
 
-import multiprocessing
+import threading
 import os
 
 def EvenDisplay(No):
     print("PID of even process ",os.getpid())
+    print("TID of even thread ",threading.get_ident())
     print("List of even numbers : ")
     start = 2
     for i in range(No):
@@ -14,6 +15,7 @@ def EvenDisplay(No):
 
 def OddDisplay(No):
     print("PID of odd process ",os.getpid())
+    print("TID of odd thread ",threading.get_ident())
     print("List of odd numbers : ")
     start = 1
     for i in range(No):
@@ -22,6 +24,8 @@ def OddDisplay(No):
 
 def main():
     print("PID of main process ",os.getpid())
+    print("TID of main thread ",threading.get_ident())
+
     print("Enter number : ")
     Value = int(input())
 
