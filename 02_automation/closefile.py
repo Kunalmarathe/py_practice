@@ -5,7 +5,7 @@ def main():
   Fname = input()
 
   if os.path.exists(Fname):
-    fobj = open(Fname, "a") # w for append
+    fobj = open(Fname, "a") # a for append
     print("File is succesfully opened in write mode")
   
     print("Enter data that you want to write in the file")
