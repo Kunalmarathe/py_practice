@@ -11,15 +11,23 @@ class Demo:
   def Gun(self):
     print(self.no1, self.no2)
 
-  
+print("Enter the values for first object")
 print("Enter the first number : ")
 val1 = int(input())
 
 print("Enter the second number : ")
 val2 = int(input())
 
-obj1 = Demo(11, 21)
-obj2 = Demo(51, 101)
+obj1 = Demo(val1, val2)
+
+print("Enter the values for second object")
+print("Enter the first number : ")
+val1 = int(input())
+
+print("Enter the second number : ")
+val2 = int(input())
+
+obj2 = Demo(val1, val2)
 
 obj1.Fun()
 obj2.Fun()
