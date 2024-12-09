@@ -1,1 +1,0 @@
-print("Bhai yaar hai tu apna")
